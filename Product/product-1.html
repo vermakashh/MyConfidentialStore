@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .breadcrumb {
+            padding: 20px 40px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #999;
+        }
+
+        .product-page {
+            display: flex;
+            padding: 0 40px;
+            gap: 60px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .product-images {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 120px;
+            border: 1px solid #e5e5e5;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .thumbnail:hover {
+            border-color: #000;
+        }
+
+        .thumbnail.active {
+            border-width: 2px;
+            border-color: #000;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main-image-container {
+            flex: 1;
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 90%;
+            display: block;
+        }
+
+        .zoom-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 50%;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            width: 400px;
+            padding: 20px 0;
+        }
+
+        .new-label {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .product-id {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .color-section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .color-option {
+            width: 30px;
+            height: 30px;
+            background: #000;
+            border: 1px solid #e5e5e5;
+            cursor: pointer;
+        }
+
+        .size-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .size-option {
+            padding: 10px;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .size-option:hover {
+            border-color: #000;
+        }
+
+        .quantity-selector {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 20px;
+        }
+
+        .add-to-bag {
+            width: 100%;
+            padding: 15px;
+            background: #000;
+            color: white;
+            border: none;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .add-to-bag:hover {
+            opacity: 0.9;
+        }
+
+        .wishlist-button {
+            width: 100%;
+            padding: 15px;
+            background: none;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        .financing-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .details-button {
+            width: 100%;
+            padding: 15px;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+     <link rel="stylesheet" href="../navbar/navbar.css">
+</head>
+<body>
+
+    <!-- Dynamic Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+
+
+    <div class="breadcrumb">
+        MEN / READY TO WEAR / JACKETS / PRODUCT NAME
+    </div>
+
+    <div class="product-page">
+        <div class="product-images">
+            <div class="thumbnail-container" id="thumbnailContainer">
+                <!-- Thumbnails will be inserted here -->
+            </div>
+            <div class="main-image-container">
+                <img src="" alt="Product" class="main-image" id="mainImage">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <div class="new-label">NEW</div>
+            <h1 class="product-title">PRODUCT NAME</h1>
+            <div class="product-price">$0,000</div>
+            <div class="product-id">PRODUCT-ID</div>
+
+            <div class="color-section">
+                <div class="section-title">
+                    COLOR: <span>BLACK</span>
+                </div>
+                <div class="color-option"></div>
+            </div>
+
+            <div class="section-title">
+                SIZE: <a href="#" class="size-chart">SIZE CHART</a>
+            </div>
+            <div class="size-grid">
+                <div class="size-option">46</div>
+                <div class="size-option">48</div>
+                <div class="size-option">50</div>
+                <div class="size-option">52</div>
+                <div class="size-option">54</div>
+                <div class="size-option">56</div>
+                <div class="size-option">58</div>
+            </div>
+
+            <select class="quantity-selector">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <button class="add-to-bag">ADD TO BAG</button>
+            <button class="wishlist-button">ADD TO WISHLIST</button>
+
+        </div>
+    </div>
+
+
+
+    <script src="../navbar/navbar.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        loadNavbar("navbar-placeholder", "../navbar/navbar.html");
+      });
+    </script>
+
+    <script>
+        class ProductViewer {
+            constructor() {
+                this.thumbnailContainer = document.getElementById('thumbnailContainer');
+                this.mainImage = document.getElementById('mainImage');
+                this.currentProduct = null;
+            }
+
+            initializeProduct(productData) {
+                this.currentProduct = productData;
+                this.mainImage.src = productData.images[0];
+                this.mainImage.alt = productData.title;
+                this.renderThumbnails();
+                this.updateProductInfo(productData);
+            }
+
+            renderThumbnails() {
+                this.thumbnailContainer.innerHTML = '';
+                
+                this.currentProduct.images.forEach((image, index) => {
+                    const thumbnailDiv = document.createElement('div');
+                    thumbnailDiv.className = `thumbnail ${index === 0 ? 'active' : ''}`;
+                    
+                    const img = document.createElement('img');
+                    img.src = image;
+                    img.alt = `${this.currentProduct.title} view ${index + 1}`;
+                    
+                    thumbnailDiv.appendChild(img);
+                    thumbnailDiv.addEventListener('click', () => this.updateMainImage(image, thumbnailDiv));
+                    
+                    this.thumbnailContainer.appendChild(thumbnailDiv);
+                });
+            }
+
+            updateMainImage(imageUrl, clickedThumbnail) {
+                this.mainImage.src = imageUrl;
+                
+                document.querySelectorAll('.thumbnail').forEach(thumb => {
+                    thumb.classList.remove('active');
+                });
+                clickedThumbnail.classList.add('active');
+            }
+
+            updateProductInfo(productData) {
+                document.querySelector('.product-title').textContent = productData.title;
+                document.querySelector('.product-price').textContent = productData.price;
+                document.querySelector('.product-id').textContent = productData.id;
+            }
+        }
+
+        // Initialize the viewer
+        const viewer = new ProductViewer();
+
+        // Example product data
+        const productData = {
+            title: "Suede Buckley Backpack",
+            price: "$1,790",
+            id: "PRODUCT-ID",
+            images: [
+                "../images/7.1.png",
+                "../images/7.2.png",
+                "../images/7.3.png",
+                "../images/DSC00722.jpg"
+            ]
+        };
+
+
+        // Load the product
+        viewer.initializeProduct(productData);
+
+
+        document.querySelector('.add-to-bag').addEventListener('click', () => {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const productToAdd = {
+        id: productData.id, // Replace with dynamic ID if needed
+        title: productData.title,
+        price: parseFloat(productData.price.replace('$', '').replace(',', '')),
+        image: productData.images[0],
+        quantity: 1
+    };
+
+    // Check if product is already in the cart
+    const existingProduct = cart.find(item => item.id === productToAdd.id);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push(productToAdd);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert('Item added to cart!');
+});
+
+    </script>
+    
+
+
+
+
+</body>
+</html>

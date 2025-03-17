@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONFIDENTIAL</title>
+  <link rel="stylesheet" href="navbar/navbar.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/eay5gla.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Dynamic Navbar -->
+  <div id="navbar-placeholder"></div>
+
+   <!-- Scroll-Controlled Video Section -->
+   <div class="video-container">
+    <div class="company-heading">Confidential</div>
+    <video id="scrollVideo" muted>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- <div class="container2">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+      </div> -->
+
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+        <h1>Timeless Elegance, Redefined</h1>
+        <p>Discover our exclusive collection of luxury bags designed for sophistication and style.</p>
+        <a href="#products" class="btn btn-light">Explore Collection</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container text-center">
+        <h2>About Us</h2>
+        <p class="lead">Luxury Bags is dedicated to crafting timeless and elegant pieces that embody sophistication and class. Each bag is a testament to unparalleled craftsmanship and premium quality materials.</p>
+    </div>
+</section>
+
+<!-- swiggy crousel idea -->
+
+<!-- <div class="sepration">
+
+    <span>The Biggest collection is here</span>
+    <div class="food">
+    <img src="images/1.png" alt="">
+    <img src="images/1.png" alt="">
+    <img src="images/1.png" alt="">
+    <img src="images/1.png" alt="">
+    
+</div> -->
+
+<!-- Product Carousel -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">NEW ARRIVALS</h2>
+    <div class="carousel-container">
+      <!-- Left Button -->
+      <button class="carousel-btn left" id="prevBtn">&lt;</button>
+  
+      <!-- Product Wrapper -->
+      <div class="carousel-wrapper" id="carouselWrapper">
+        <!-- Repeated product cards -->
+        <div class="product-card">
+          <img src="images/p1.jpg" alt="Product 1" data-hover="images/p11.jpg">
+          <h5>Product 1</h5>
+          <p>$100</p>
+        </div>
+        <div class="product-card">
+          <img src="images\p2.jpg" alt="Product 2" data-hover="images/p22.jpg">
+          <h5>Product 2</h5>
+          <p>$200</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p3.jpg" alt="Product 3" data-hover="images/p33.jpg">
+          <h5>Product 3</h5>
+          <p>$300</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p4.jpg" alt="Product 4" data-hover="images/p44.jpg">
+          <h5>Product 4</h5>
+          <p>$400</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p5.jpg" alt="Product 5" data-hover="images/p55.jpg">
+          <h5>Product 5</h5>
+          <p>$500</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p1.jpg" alt="Product 1" data-hover="images/p11.jpg">
+          <h5>Product 1</h5>
+          <p>$100</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p2.jpg" alt="Product 2" data-hover="images/p22.jpg">
+          <h5>Product 2</h5>
+          <p>$200</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p3.jpg" alt="Product 3" data-hover="images/p33.jpg">
+          <h5>Product 3</h5>
+          <p>$300</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p4.jpg" alt="Product 4" data-hover="images/p44.jpg">
+          <h5>Product 4</h5>
+          <p>$400</p>
+        </div>
+        <div class="product-card">
+          <img src="images/p5.jpg" alt="Product 5" data-hover="images/p55.jpg">
+          <h5>Product 5</h5>
+          <p>$500</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product1.png" alt="Product 1" data-hover="images/p44.jpg">
+          <h5>Product 1</h5>
+          <p>$100</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product2.png" alt="Product 2" data-hover="images/DSC00717.JPG">
+          <h5>Product 2</h5>
+          <p>$200</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product3.png" alt="Product 3" data-hover="images/DSC01453.JPG">
+          <h5>Product 3</h5>
+          <p>$300</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product4.png" alt="Product 4" data-hover="images/DSC01453.JPG">
+          <h5>Product 4</h5>
+          <p>$400</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product5.png" alt="Product 5" data-hover="images/DSC01608.JPG">
+          <h5>Product 5</h5>
+          <p>$500</p>
+        </div>
+        <!-- <div class="product-card">
+          <img src="images/6.png" alt="Product 6" data-hover="images/6-hover.png">
+          <h5>Product 6</h5>
+          <p>$600</p>
+        </div>
+        <div class="product-card">
+          <img src="images/7.png" alt="Product 7" data-hover="images/7-hover.png">
+          <h5>Product 7</h5>
+          <p>$700</p>
+        </div>
+        <div class="product-card">
+          <img src="images/8.png" alt="Product 8" data-hover="images/8-hover.png">
+          <h5>Product 8</h5>
+          <p>$800</p>
+        </div>
+        <div class="product-card">
+          <img src="images/9.png" alt="Product 9" data-hover="images/9-hover.png">
+          <h5>Product 9</h5>
+          <p>$900</p>
+        </div>
+        <div class="product-card">
+          <img src="images/10.png" alt="Product 10" data-hover="images/10-hover.png">
+          <h5>Product 10</h5>
+          <p>$1000</p>
+        </div> -->
+      </div>
+  
+      <!-- Right Button -->
+      <button class="carousel-btn right" id="nextBtn">&gt;</button>
+    </div>
+  </div>
+    
+
+<!-- Products Section -->
+<section id="products" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">OUR COLLECTION</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/product1.png" class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Classic Leather Tote</h5>
+                        <p class="card-text">$999</p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/product2.png" class="card-img-top" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Modern Backpack</h5>
+                        <p class="card-text">$799</p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/product3.png" class="card-img-top" alt="Product 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Elegant Handbag</h5>
+                        <p class="card-text">$1199</p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/product4.png" class="card-img-top" alt="Product 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Elegant Handbag</h5>
+                        <p class="card-text">$1199</p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/product5.png" class="card-img-top" alt="Product 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Elegant Handbag</h5>
+                        <p class="card-text">$1199</p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="images/product6.png" class="card-img-top" alt="Product 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Elegant Handbag</h5>
+                        <p class="card-text">$1199</p>
+                        <a href="#" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+</section>
+
+<!-- JavaScript -->
+ <script>
+// Select DOM elements
+const carouselWrapper = document.querySelector('#carouselWrapper');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+const productCards = document.querySelectorAll('.product-card img');
+
+// Carousel settings
+let currentIndex = 0;
+const visibleItems = 5;
+const totalItems = document.querySelectorAll('.product-card').length;
+
+// Function to update carousel position
+function updateCarousel() {
+  const itemWidth = document.querySelector('.product-card').offsetWidth;
+  carouselWrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+// Move to next set of products
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < totalItems - visibleItems) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Loop back to start
+  }
+  updateCarousel();
+});
+
+// Move to previous set of products
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = totalItems - visibleItems; // Loop to end
+  }
+  updateCarousel();
+});
+
+// Hover Image Change
+productCards.forEach((img) => {
+  const originalSrc = img.src;
+  const hoverSrc = img.getAttribute('data-hover');
+
+  img.addEventListener('mouseover', () => {
+    if (hoverSrc) img.src = hoverSrc;
+  });
+
+  img.addEventListener('mouseout', () => {
+    img.src = originalSrc;
+  });
+});
+</script>
+
+
+  <!-- Pair Image -->
+ <!-- Two Images Section Above Footer-Banner -->
+ <div class="image-pair-container">
+    <div class="image-box">
+      <img src="images/imagepair1.JPG" alt="First Image">
+    </div>
+    <div class="image-box">
+      <img src="images/imagepair2.JPG" alt="Second Image">
+    </div>
+  </div>
+  
+  
+  <!-- Footer Banner -->
+  <div class="footer-banner">
+    <img src="images/Footer-Banner.jpg" alt="Footer Banner">
+    <div class="footer-banner-content">
+      <h1 class="footer-heading">GENZ COLLECTION</h1>
+      <a href="your-link-page.html" class="footer-button">SHOP NOW</a>
+    </div>
+  </div>  
+  
+<!-- Footer -->
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Customer Service -->
+      <div class="footer-section">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="Contact-Us/contact-index.html">Contact Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+        </ul>
+      </div>
+  
+      <!-- Made to Measure -->
+      <div class="footer-section">
+        <h3>MADE TO MEASURE</h3>
+        <ul>
+          <li><a href="#">Style Consultants</a></li>
+        </ul>
+      </div>
+  
+      <!-- Company -->
+      <div class="footer-section">
+        <h3>THE COMPANY</h3>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+  
+      <!-- Newsletter Subscription -->
+      <div class="footer-section subscribe">
+        <h3>ENTER EMAIL ADDRESS</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>Copyright © 2024 Confidential. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">SITE MAP</a> |
+        <a href="#">PRIVACY POLICY</a> |
+        <a href="#">TERMS & CONDITIONS</a>
+      </div>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+ <!-- Login/Signup Modal -->
+<div id="loginModal" class="modal-overlay">
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="form-container">
+        <div class="form-toggle">
+          <button id="loginToggle" class="active">Login</button>
+          <button id="signupToggle">Sign Up</button>
+          <button id="closeModalBtn">Close</button>
+        </div>
+        
+        <!-- Login Form -->
+        <form id="loginForm" class="form active">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+          <p class="forgot-password">Forgot Password?</p>
+        </form>
+        
+        <!-- Signup Form -->
+        <form id="signupForm" class="form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    // Ensure the DOM is fully loaded before running the script
+document.addEventListener('DOMContentLoaded', () => {
+  // Select modal and buttons
+  const loginModal = document.getElementById('loginModal'); // Make sure the ID matches your HTML
+  const closeModalBtn = document.getElementById('closeModalBtn'); // Make sure the ID matches your HTML
+  const loginToggle = document.getElementById('loginToggle'); // Make sure the ID matches your HTML
+  const signupToggle = document.getElementById('signupToggle'); // Make sure the ID matches your HTML
+  const loginForm = document.getElementById('loginForm'); // Make sure the ID matches your HTML
+  const signupForm = document.getElementById('signupForm'); // Make sure the ID matches your HTML
+
+  // Show modal after 5 seconds
+  setTimeout(() => {
+    if (loginModal) {
+      loginModal.style.display = 'flex';
+    } else {
+      console.error('loginModal element not found!');
+    }
+  }, 5000);
+
+  // Close modal
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', () => {
+      if (loginModal) {
+        loginModal.style.display = 'none';
+      } else {
+        console.error('loginModal element not found!');
+      }
+    });
+  } else {
+    console.error('closeModalBtn element not found!');
+  }
+
+  // Toggle between login and signup
+  if (loginToggle && signupToggle && loginForm && signupForm) {
+    loginToggle.addEventListener('click', () => {
+      loginToggle.classList.add('active');
+      signupToggle.classList.remove('active');
+      loginForm.classList.add('active');
+      signupForm.classList.remove('active');
+    });
+
+    signupToggle.addEventListener('click', () => {
+      signupToggle.classList.add('active');
+      loginToggle.classList.remove('active');
+      signupForm.classList.add('active');
+      loginForm.classList.remove('active');
+    });
+  } else {
+    console.error('One or more elements related to toggle functionality are missing!');
+  }
+
+  // Form submission (you'll want to replace these with actual authentication logic)
+  if (loginForm) {
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Login functionality to be implemented');
+    });
+  } else {
+    console.error('loginForm element not found!');
+  }
+
+  if (signupForm) {
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Signup functionality to be implemented');
+    });
+  } else {
+    console.error('signupForm element not found!');
+  }
+});
+
+  </script>
+
+  <!-- Scripts -->
+  <script>
+    // Load navbar dynamically
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("navbar/navbar.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading navbar:", error));
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
+

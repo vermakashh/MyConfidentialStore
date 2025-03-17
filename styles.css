@@ -1,0 +1,511 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #333;
+}
+:root {
+  --primary-color: #cb5835;
+  --transition-speed: 0.3s;
+}
+
+
+.hero {
+  background-image: url('images/DSC01354.JPG');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 1.25rem;
+}
+.product-card {
+  border: none;
+}
+.product-card img {
+  border-radius: 10px;
+}
+
+/* Header Styling */
+.header {
+  background: #cb5835;
+  color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+/* Video Section */
+.video-container {
+  position: relative; /* Allow the product section to follow immediately */
+  height: 200vh; /* Double the viewport height for scrolling control */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  margin: auto;
+}
+
+video {
+  position: sticky; /* Keeps the video in view while scrolling */
+  top: 50px;
+  height: 100vh; /* Full viewport height minus the header */
+  
+  width: 100%;
+    height: auto;
+    display: block;
+}
+
+.company-heading {
+  margin-left: 30px;
+  position: absolute; /* Overlay on top of the video container */
+  top: 10%; /* Adjust to position correctly */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Ensure it's above other elements */
+  color: white;
+  font-size: 48px; /* Large text size */
+  font-weight: bold;
+  text-transform: uppercase; /* Make all letters uppercase */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.0); /* Optional: Semi-transparent background */
+  padding: 20px; /* Add spacing around text */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  letter-spacing: 80px;
+}
+
+.sepration{
+  height: 33vh;
+  position: relative;
+  z-index: 20;    
+     
+}
+
+.sepration>:nth-child(1){
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 26px;
+  font-weight: bolder; 
+  display: flex;
+  justify-content: center;
+}
+
+.food{
+
+  height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+ /* Custom carousel container */
+ .carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+/* Carousel wrapper for sliding */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Each product card */
+.product-card {
+  flex: 0 0 20%; /* 20% width = 5 items per row */
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+/* Navigation buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-btn.left {
+  left: 5px;
+}
+
+.carousel-btn.right {
+  right: 5px;
+}
+
+
+/* Product Section */
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.product-item {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  display: block; /* Make the entire item clickable */
+  position: relative;
+  cursor: pointer;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item h3, .product-item p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Heart Icon */
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #131313;
+  cursor: pointer;
+}
+
+
+/* Container for Two Images */
+.image-pair-container {
+  display: flex; /* Align items side by side */
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Align images vertically */
+  gap: 0; /* Remove any gap between images */
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Ensure no overflow */
+}
+
+/* Individual Image Box */
+.image-box {
+  flex: 1; /* Equal width for both images */
+  max-width: 50%; /* Each image takes 50% width */
+  height: 960px; /* Set height to match image dimensions */
+  overflow: hidden; /* Ensure no content spills out */
+}
+
+.image-box img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Maintain aspect ratio while covering */
+}
+
+/* Banner above the footer */
+
+.footer-banner {
+  position: relative; /* Create positioning context */
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+  overflow: hidden;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.footer-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain image proportions and cover the container */
+}
+
+.footer-banner-content {
+  position: absolute; /* Position the content over the image */
+  bottom: 20px; /* Distance from the bottom of the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center perfectly */
+  text-align: center; /* Align content center */
+  color: white; /* Text color for visibility */
+  z-index: 10; /* Ensure content is above the image */
+}
+
+.footer-heading {
+  font-size: 3rem; /* Adjust text size */
+  font-weight: bold;
+  margin-bottom: 15px; /* Space between heading and button */
+  text-transform: uppercase;
+}
+
+.footer-button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  color: white;
+  border: 2px solid white; /* Border for button */
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+   /* Thin line above the footer */
+   border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #cb5835;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe input {
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.subscribe button {
+  padding: 8px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+  background-color: #cb5835;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding: 20px 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #cb5835;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #cb5835;
+}
+
+.modal-overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Close Button Styling */
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #ff0000; /* Optional: Change color on hover */
+}
+
+.material-icons {
+  font-size: 24px; /* Adjust size as needed */
+}
+
+
+.form-container {
+  padding: 20px;
+}
+
+.form-toggle {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.form-toggle button.active {
+  border-bottom-color: #cb5835;
+  color: #cb5835;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #cb5835;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: center;
+  color: #cb5835;
+  margin-top: 10px;
+  cursor: pointer;
+}

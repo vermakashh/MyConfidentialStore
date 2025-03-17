@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGPACKS</title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="bagpack.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Dynamic Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="breadcrumb">
+        <span>Men</span> / <span>Bags</span> / <span>Backpacks</span>
+    </div>
+
+    <header>
+        <h1>BAGPACKS</h1>
+    </header>
+
+    <div class="product-grid">
+        <!-- Each product links to a webpage (currently set to #) -->
+        <a href="/Product/product-1" class="product-item" data-images="../images/7.1.png,../images/7.2.png,../images/7.3.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/7.1.png" alt="Suede Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Suede Buckley Backpack</h3>
+            <p>$1,790</p>
+        </a>
+        <a href="#" class="product-item" data-images="../images/2.1.png,../images/2.2.png,../images/2.3.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/2.1.png" alt="Grain Leather Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Grain Leather Buckley Backpack</h3>
+            <p>$1,350</p>
+        </a>
+         <a href="#" class="product-item" data-images="../images/3.1.png,../images/3.2.png,../images/3.3.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/3.1.png" alt="Grain Leather Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Grain Leather Buckley Backpack</h3>
+            <p>$1,350</p>
+        </a>
+         <a href="#" class="product-item" data-images="../images/4.1.png,../images/4.2.png,../images/4.1.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/4.1.png" alt="Grain Leather Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Grain Leather Buckley Backpack</h3>
+            <p>$1,350</p>
+        </a>
+         <a href="#" class="product-item" data-images="../images/5.1.png,../images/5.2.png,../images/5.1.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/5.1.png" alt="Grain Leather Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Grain Leather Buckley Backpack</h3>
+            <p>$1,350</p>
+        </a>
+         <a href="#" class="product-item" data-images="../images/6.1.png,../images/6.2.png,../images/6.3.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/6.1.png" alt="Grain Leather Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Grain Leather Buckley Backpack</h3>
+            <p>$1,350</p>
+        </a>
+         <a href="#" class="product-item" data-images="../images/1.1.png,../images/1.2.png,../images/1.3.png">
+            <div class="image-container">
+                <img class="product-image" src="../images/1.1.png" alt="Grain Leather Buckley Backpack">
+                <div class="heart-icon" onclick="addToFavorites(event)">
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+            <h3>Grain Leather Buckley Backpack</h3>
+            <p>$1,350</p>
+        </a>
+    </div>
+    <div id=“footer-placeholder”></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('../footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
+
+    <script src="../navbar/navbar.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadNavbar("navbar-placeholder", "../navbar/navbar.html");
+    });
+  </script>
+    <!-- JavaScript -->
+    <script src="bagpack.js"></script>
+</body>
+</html>
