@@ -1,0 +1,60 @@
+.carousel-section {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  .product-card {
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+  }
+  
+  .carousel-btn.left {
+    left: 0;
+  }
+  
+  .carousel-btn.right {
+    right: 0;
+  }
+  

@@ -1,0 +1,23 @@
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .company-heading {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    z-index: 1;
+  }
+  

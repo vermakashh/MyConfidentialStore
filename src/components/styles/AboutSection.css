@@ -1,0 +1,19 @@
+.about-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .about-section .lead {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

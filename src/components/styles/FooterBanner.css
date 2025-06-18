@@ -1,0 +1,40 @@
+.footer-banner {
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .footer-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .footer-banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .footer-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-button:hover {
+    background-color: #ddd;
+  }
+  

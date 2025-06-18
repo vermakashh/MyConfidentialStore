@@ -1,0 +1,118 @@
+/* General reset (already present, but adding here for completeness) */
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+/* Favorites Info Section */
+.favorites-info {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.favorites-info h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #000;
+}
+
+.favorites-info p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 20px;
+}
+
+.favorites-info .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.favorites-info .sign-in-button,
+.favorites-info .share-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.favorites-info .sign-in-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.favorites-info .sign-in-button:hover {
+    background-color: #333;
+}
+
+.favorites-info .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #000;
+}
+
+.favorites-info .share-button:hover {
+    background-color: #f2f2f2;
+}
+
+
+header h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.product-item {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+    display: block; /* Make the entire item clickable */
+    position: relative;
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item h3, .product-item p {
+    margin: 0px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 item per row on very small screens */
+    }
+}
